@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>موبيليات الغيث | معرض ومعمل أثاث</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500;700&family=Tajawal:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#ffffff;--panel:#f3f7fd;--ink:#0d2140;--mut:#4f627d;--green:#0a4aa3;--on-green:#ffffff;--brass:#1b6fd8;--sky:#a8d3ff;--wood:#0a4aa3;--line:#d3deee;--hf:'Reem Kufi','Tajawal',Tahoma,sans-serif;--bf:'Tajawal',Tahoma,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0a1424;--panel:#111f36;--ink:#e8eefb;--mut:#9bb0cf;--green:#0c2f66;--on-green:#ffffff;--brass:#6db3ff;--sky:#a8d3ff;--wood:#7db8ff;--line:#24385a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0a1424;--panel:#111f36;--ink:#e8eefb;--mut:#9bb0cf;--green:#0c2f66;--on-green:#ffffff;--brass:#6db3ff;--sky:#a8d3ff;--wood:#7db8ff;--line:#24385a;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.8 var(--bf);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+h1,h2,h3{font-family:var(--hf);font-weight:700;line-height:1.25;margin:0}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:18px;height:64px}
+.logo{font:700 24px var(--hf);color:var(--green);display:flex;align-items:center;gap:8px}
+:root:not([data-theme="light"]) .logo{color:var(--on-green)}
+.logo i{width:15px;height:15px;background:var(--brass);display:inline-block;border-radius:50% 0 50% 50%;transform:rotate(-45deg)}
+nav{display:flex;gap:22px;margin-inline-start:auto;font-weight:500}
+nav a:hover{color:var(--brass)}
+.btn{display:inline-block;font:700 16px var(--bf);padding:11px 22px;border:2px solid var(--green);background:var(--green);color:var(--on-green);cursor:pointer;border-radius:4px}
+.btn.alt{background:transparent;color:inherit;border-color:currentColor}
+.btn:hover{background:var(--brass);border-color:var(--brass);color:#fff}
+.hero{background:var(--green);color:var(--on-green)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:64px;padding-bottom:64px}
+.hero h1{font-size:clamp(38px,6.4vw,74px);margin-bottom:18px}
+.hero p{font-size:19px;max-width:30em;margin:0 0 28px;opacity:.9}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.hero .btn{background:#fff;border-color:#fff;color:var(--green)}
+.hero .btn.alt{background:transparent;color:var(--on-green);border-color:var(--on-green)}
+.hero .btn:hover{background:var(--sky);border-color:var(--sky);color:#0a2a5c}
+.grain{position:relative;aspect-ratio:1/1.05;border-radius:6px;background:repeating-linear-gradient(100deg,rgba(255,255,255,.14) 0 2px,transparent 2px 12px),linear-gradient(135deg,#3b8cf0,#1560c9 55%,#2c7ae6);display:grid;place-items:center;overflow:hidden}
+.grain svg{width:82%;fill:#fff;filter:drop-shadow(0 14px 18px rgba(0,0,0,.35))}
+.tag{position:absolute;inset-inline:16px;background:#fff;color:#0a2a5c;padding:8px 14px;font-weight:700;border-inline-start:5px solid var(--brass)}
+.tag small{display:block;font-weight:400;opacity:.8;line-height:1.5}
+.t1{top:16px}.t2{bottom:16px}
+.intro{animation:up .9s both}.intro:nth-child(2){animation-delay:.12s}.intro:nth-child(3){animation-delay:.24s}
+@keyframes up{from{opacity:0;transform:translateY(22px)}}
+.stats{background:var(--panel);border-block:1px solid var(--line)}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;padding-block:26px}
+.stats b{display:block;font:700 40px var(--hf);color:var(--brass)}
+.stats span{color:var(--mut)}
+section{padding:72px 0}
+.head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:32px}
+.head h2{font-size:clamp(28px,4vw,42px)}
+.head p{margin:0;color:var(--mut);max-width:26em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.item{background:var(--panel);border:1px solid var(--line);display:flex;flex-direction:column}
+.item:nth-child(even){border-radius:0 26px 0 26px}
+.item:nth-child(odd){border-radius:26px 0 26px 0}
+.pic{height:150px;display:grid;place-items:center;background:repeating-linear-gradient(90deg,transparent 0 22px,rgba(60,110,190,.1) 22px 23px),var(--bg);border-bottom:1px solid var(--line)}
+.pic svg{height:96px;fill:var(--wood)}
+.pic .l{fill-opacity:.55}
+.item div{padding:16px 20px 20px}
+.item h3{font-size:22px}
+.item p{margin:4px 0 12px;color:var(--mut);font-size:15px;line-height:1.7}
+.item b{color:var(--brass)}
+.factory{background:var(--green);color:var(--on-green)}
+.factory .head p{color:inherit;opacity:.85}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;counter-reset:s;border-top:2px solid var(--sky)}
+.steps li{list-style:none;counter-increment:s;padding:22px 18px 0;border-inline-start:1px solid rgba(255,255,255,.18)}
+.steps li:first-child{border-inline-start:0;padding-inline-start:0}
+.steps li::before{content:counter(s);font:700 34px var(--hf);color:var(--sky);display:block}
+.steps h3{font-size:21px;margin-bottom:4px}
+.steps p{margin:0;opacity:.85;font-size:15px;line-height:1.7}
+ul.steps{margin:0;padding:0}
+.order{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}
+.order h2{font-size:clamp(28px,4vw,42px);margin-bottom:12px}
+.order p{color:var(--mut)}
+.info{margin-top:20px;display:grid;gap:6px;font-weight:500}
+form{background:var(--panel);border:1px solid var(--line);padding:24px;display:grid;gap:14px;border-radius:6px}
+label{display:grid;gap:4px;font-weight:700;font-size:15px}
+input,select,textarea{font:400 16px var(--bf);padding:11px 12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:4px;width:100%}
+textarea{min-height:90px;resize:vertical}
+#ok{margin:0;color:var(--brass);font-weight:700;min-height:1.6em}
+footer{background:var(--green);color:var(--on-green);text-align:center;padding:26px 20px;font-size:15px}
+footer a{color:var(--brass)}
+@media (max-width:860px){.hero .wrap,.order{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.steps li{border-inline-start:0;padding-inline-start:0;padding-bottom:18px}nav{display:none}.btn.top{margin-inline-start:auto}.grain{aspect-ratio:1/.8}}
+@media (max-width:520px){.grid{grid-template-columns:1fr}.stats b{font-size:30px}section{padding:52px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.intro{animation:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="#top"><i></i>موبيليات الغيث</a>
+<nav><a href="#products">المنتجات</a><a href="#factory">المعمل</a><a href="#order">اطلب تصميمك</a></nav>
+<a class="btn top" href="tel:07XXXXXXXXX">اتصل بنا</a>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1 class="intro">من الخشب الخام إلى غرفتك</h1>
+<p class="intro">معرض ومعمل في مكان واحد. اشترِ القطعة الجاهزة، أو صمّم قطعتك ونصنعها لك بالقياس الذي تريده.</p>
+<div class="acts intro"><a class="btn" href="#products">شاهد المنتجات</a><a class="btn alt" href="#order">اطلب تصميمك</a></div>
+</div>
+<div class="grain" aria-hidden="true">
+<span class="tag t1">المعرض<small>قطع جاهزة للاستلام والتوصيل</small></span>
+<svg viewBox="0 0 120 80"><rect x="18" y="14" width="84" height="32" rx="9"/><rect x="5" y="34" width="24" height="34" rx="9"/><rect x="91" y="34" width="24" height="34" rx="9"/><rect x="24" y="42" width="72" height="26" rx="6"/><rect x="26" y="68" width="6" height="8"/><rect x="88" y="68" width="6" height="8"/></svg>
+<span class="tag t2">المعمل<small>تصنيع بالقياس والتصميم الذي تختاره</small></span>
+</div>
+</div></div>
+
+<div class="stats"><div class="wrap">
+<div><b data-n="18">0</b><span>سنة خبرة</span></div>
+<div><b data-n="3200">0</b><span>قطعة سُلّمت</span></div>
+<div><b data-n="40">0</b><span>نجار وعامل تشطيب</span></div>
+</div></div>
+
+<section id="products"><div class="wrap">
+<div class="head"><h2>ما نبيعه في المعرض</h2><p>السعر بالمتر: من 100,000 إلى 300,000 د.ع للمتر، حسب الخامة والتصميم المطلوب.</p></div>
+<div class="grid">
+<article class="item"><div class="pic"><svg viewBox="0 0 120 80"><rect x="18" y="14" width="84" height="32" rx="9"/><rect x="5" y="34" width="24" height="34" rx="9" class="l"/><rect x="91" y="34" width="24" height="34" rx="9" class="l"/><rect x="24" y="42" width="72" height="26" rx="6"/><rect x="26" y="68" width="6" height="8"/><rect x="88" y="68" width="6" height="8"/></svg></div><div><h3>غرف جلوس</h3><p>كنب وأرائك بهيكل خشب زان وإسفنج عالي الكثافة.</p><b>من 100,000 إلى 300,000 د.ع للمتر</b></div></article>
+<article class="item"><div class="pic"><svg viewBox="0 0 120 80"><rect x="12" y="10" width="96" height="38" rx="4"/><rect x="8" y="44" width="104" height="22" rx="4" class="l"/><rect x="20" y="36" width="32" height="12" rx="5"/><rect x="68" y="36" width="32" height="12" rx="5"/><rect x="10" y="66" width="8" height="10"/><rect x="102" y="66" width="8" height="10"/></svg></div><div><h3>غرف نوم</h3><p>سرير ودولاب وتسريحة بنفس اللون والتصميم.</p><b>من 100,000 إلى 300,000 د.ع للمتر</b></div></article>
+<article class="item"><div class="pic"><svg viewBox="0 0 120 80"><rect x="30" y="4" width="60" height="68" rx="3"/><rect x="59" y="8" width="2" height="60" class="l"/><circle cx="54" cy="38" r="2.6" class="l"/><circle cx="66" cy="38" r="2.6" class="l"/><rect x="34" y="72" width="8" height="6"/><rect x="78" y="72" width="8" height="6"/></svg></div><div><h3>دواليب وخزائن</h3><p>أبواب سحب أو مفصلات، وتقسيم داخلي حسب حاجتك.</p><b>من 100,000 إلى 300,000 د.ع للمتر</b></div></article>
+<article class="item"><div class="pic"><svg viewBox="0 0 120 80"><rect x="10" y="18" width="100" height="9" rx="4"/><rect x="20" y="27" width="7" height="46" class="l"/><rect x="93" y="27" width="7" height="46" class="l"/><rect x="34" y="27" width="52" height="6" class="l"/></svg></div><div><h3>طاولات سفرة</h3><p>خشب صلب بطبقة حماية ضد الحرارة والخدش.</p><b>من 100,000 إلى 300,000 د.ع للمتر</b></div></article>
+<article class="item"><div class="pic"><svg viewBox="0 0 120 80"><rect x="36" y="6" width="48" height="34" rx="5"/><rect x="32" y="40" width="56" height="10" rx="4" class="l"/><rect x="36" y="50" width="6" height="26"/><rect x="78" y="50" width="6" height="26"/></svg></div><div><h3>كراسي</h3><p>كراسي سفرة وزاوية بمقاعد مبطّنة قابلة للتبديل.</p><b>من 100,000 إلى 300,000 د.ع للمتر</b></div></article>
+<article class="item"><div class="pic"><svg viewBox="0 0 120 80"><rect x="8" y="16" width="104" height="8" rx="3"/><rect x="14" y="24" width="8" height="50" class="l"/><rect x="78" y="24" width="28" height="50" class="l"/><rect x="82" y="32" width="20" height="10"/><rect x="82" y="48" width="20" height="10"/></svg></div><div><h3>مكاتب</h3><p>مكاتب منزلية ومكتبية مع أدراج وتمديد للأسلاك.</p><b>من 100,000 إلى 300,000 د.ع للمتر</b></div></article>
+</div></div></section>
+
+<section id="factory" class="factory"><div class="wrap">
+<div class="head"><h2>كيف نصنع قطعتك في المعمل</h2><p>تتابع الطلب من أول قياس حتى التركيب في بيتك.</p></div>
+<ul class="steps">
+<li><h3>التصميم والقياس</h3><p>نرسم القطعة على مقاسك ونتفق معك على الخشب واللون.</p></li>
+<li><h3>القص والتجميع</h3><p>نقص الألواح بالمقاس ونجمّعها بوصلات متينة.</p></li>
+<li><h3>الدهان والتشطيب</h3><p>صنفرة وطبقات دهان ثم تجفيف قبل الفحص النهائي.</p></li>
+<li><h3>التوصيل والتركيب</h3><p>ينقلها فريقنا ويركّبها في مكانها ويتأكد من ثباتها.</p></li>
+</ul>
+</div></section>
+
+<section id="order"><div class="wrap order">
+<div>
+<h2>صمّم قطعتك واطلب سعرها</h2>
+<p>اكتب ما تريده بالطول والخامة، ويصلنا الطلب على واتساب. نحسب السعر بالمتر ونرد عليك بالتكلفة ومدة التصنيع.</p>
+<div class="info"><span>الهاتف: 07XX XXX XXXX</span><span>العنوان: اكتب عنوان المعرض هنا</span><span>الدوام: يومياً من 9 صباحاً حتى 8 مساءً</span></div>
+</div>
+<form id="f">
+<label>الاسم<input name="n" required autocomplete="name"></label>
+<label>رقم الهاتف<input name="p" type="tel" required autocomplete="tel"></label>
+<label>نوع القطعة<select name="t"><option>غرفة جلوس</option><option>غرفة نوم</option><option>دولاب</option><option>طاولة سفرة</option><option>مكتب</option><option>قطعة بتصميم خاص</option></select></label>
+<label>الطول المطلوب بالمتر<input name="m" type="number" min="0.5" step="0.1" inputmode="decimal"></label>
+<label>التفاصيل والمقاسات<textarea name="d"></textarea></label>
+<button class="btn" type="submit">أرسل الطلب عبر واتساب</button>
+<p id="ok" role="status"></p>
+</form>
+</div></section>
+</main>
+
+<footer>© موبيليات الغيث. جميع الحقوق محفوظة.</footer>
+
+<script>
+var WA='9647XXXXXXXXX'; // ضع رقم واتساب هنا بالصيغة الدولية بدون + وبدون صفر
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function count(el){var t=+el.dataset.n,s=null;function step(ts){if(s===null)s=ts;var p=Math.min((ts-s)/1400,1);el.textContent=Math.round(t*(1-Math.pow(1-p,3))).toLocaleString('en-US');if(p<1)requestAnimationFrame(step)}reduce?el.textContent=t.toLocaleString('en-US'):requestAnimationFrame(step)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);io.unobserve(e.target)}})});
+document.querySelectorAll('[data-n]').forEach(function(el){io.observe(el)});
+document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();var f=e.target;
+var msg='طلب جديد%0Aالاسم: '+encodeURIComponent(f.n.value)+'%0Aالهاتف: '+encodeURIComponent(f.p.value)+'%0Aالنوع: '+encodeURIComponent(f.t.value)+'%0Aالطول: '+encodeURIComponent(f.m.value)+'%20متر'+'%0Aالتفاصيل: '+encodeURIComponent(f.d.value);
+document.getElementById('ok').textContent='جهّزنا طلبك. اضغط إرسال في واتساب لإكماله.';
+window.open('https://wa.me/'+WA+'?text='+msg,'_blank','noopener')});
+</script>
+</body>
+</html>
